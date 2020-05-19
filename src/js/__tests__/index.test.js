@@ -13,5 +13,5 @@ test('error not found', () => {
   errorsDataBase.errorsArray.set(404, 'страница не найдена');
   errorsDataBase.errorsArray.set(400, 'рандомная ошибка');
 
-  expect(errorsDataBase.translate(401)).toEqual(Error('Unknown error'));
+  expect(errorsDataBase.translate(401)).toBe('Unknown error');
 });

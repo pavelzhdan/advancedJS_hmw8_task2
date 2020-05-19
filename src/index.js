@@ -7,7 +7,7 @@ export default class ErrorRepository {
     if (this.errorsArray.has(code)) {
       return this.errorsArray.get(code);
     }
-    return Error('Unknown error');
+    return 'Unknown error';
   }
 }
 
